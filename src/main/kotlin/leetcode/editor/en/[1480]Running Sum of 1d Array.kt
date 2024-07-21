@@ -40,6 +40,10 @@
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     fun runningSum(nums: IntArray): IntArray {
+
+        //Time Complexity O(n)
+        //Space Complexity O(1)
+
         val tempArray = IntArray(nums.size)
 //        nums.forEachIndexed { index, i ->
 //            if(index != 0) {
