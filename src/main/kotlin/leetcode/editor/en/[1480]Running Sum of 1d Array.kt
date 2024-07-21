@@ -41,14 +41,21 @@
 class Solution {
     fun runningSum(nums: IntArray): IntArray {
         val tempArray = IntArray(nums.size)
+//        nums.forEachIndexed { index, i ->
+//            if(index != 0) {
+//                tempArray[index] = tempArray[index -1] + i
+//            } else {
+//                tempArray[index] = i
+//            }
+//        }
+//        return tempArray
+
         nums.forEachIndexed { index, i ->
             if(index != 0) {
-                tempArray[index] = tempArray[index -1] + i
-            } else {
-                tempArray[index] = i
+                nums[index] = nums[index-1] + i
             }
         }
-        return tempArray
+        return nums
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
